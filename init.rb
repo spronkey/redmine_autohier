@@ -11,4 +11,8 @@ Replaces Redmine's wiki hierarchy features with a more transparent one.
 https://github.com/merikonjatta/redmine_autohier
 HERE
   version '0.0.4'
+  
+  settings :default => {
+  	'show_wiki_title_as_h2'	=>	"0"
+  }, :partial => 'settings/autohier_settings'
 end
