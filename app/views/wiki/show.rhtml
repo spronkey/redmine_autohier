@@ -14,7 +14,7 @@
 <%= breadcrumb(@page.ancestors.reverse.collect {|parent| link_to h(parent.short_title), {:id => parent.title, :project_id => parent.project}}) %>
 
 <% if Setting.plugin_redmine_automatic_hierarchy['show_wiki_title_as_h2'].to_i == 1 %>
-<h2><%= @page.title %></h2>
+<h2><%= @page.short_title %></h2>
 <% end %>
 
 <% if @content.version != @page.content.version %>
